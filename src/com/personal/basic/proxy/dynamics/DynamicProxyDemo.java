@@ -13,9 +13,9 @@ public class DynamicProxyDemo {
     public static void main(String[] args) {
         DPayment dPayment = new DUserPayment();
         DPayment dPaymentProxy = (DPayment) Proxy.newProxyInstance(DynamicProxyDemo.class.getClassLoader(), dPayment.getClass().getInterfaces(), new ProxyDPaymentHandler(dPayment));
-        System.out.println("pay process...");
+        System.out.println("------pay process------");
         dPaymentProxy.dPay();
-        System.out.println("refund process...");
+        System.out.println("------refund process------");
         dPaymentProxy.refund();
     }
 }

@@ -19,7 +19,19 @@ public class ProxyDPaymentHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("invoke method body...");
-        return method.invoke(target, args);
+        System.out.println("----invoke method body----");
+        Object ret = null;
+        beforeInvoke();
+        ret = method.invoke(target, args);
+        afterInvoke();
+        return ret;
+    }
+
+    public void beforeInvoke(){
+        System.out.println("--before invoke checking--");
+    }
+
+    public void afterInvoke(){
+        System.out.println("--after invoke checking--");
     }
 }
