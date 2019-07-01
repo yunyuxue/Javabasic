@@ -33,6 +33,8 @@ public class FrequencyCharWithCount {
 
         List<Map.Entry<Character, Integer>> list = new ArrayList<Map.Entry<Character,Integer>>(cacheMap.entrySet());
         List<Map.Entry<Character, Integer>> list2 = new ArrayList<>(cacheMap.entrySet());
+        List<Map.Entry<Character, Integer>> list3 = new ArrayList<Map.Entry<Character,Integer>>(cacheMap.entrySet());
+
 
         //值降序排列
         Collections.sort(list, new Comparator<Map.Entry<Character, Integer>>() {
@@ -50,6 +52,9 @@ public class FrequencyCharWithCount {
             }
         });
 
+        //值升序排列Lambda实现
+        Collections.sort(list3, (Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2)-> {return o1.getValue().compareTo(o2.getValue());});
+
         System.out.println(list.toString());
         for(Map.Entry<Character, Integer> temp : list){
             if(temp.getValue() > 1){
@@ -59,6 +64,8 @@ public class FrequencyCharWithCount {
         System.out.println();
         System.out.println("-----------------------------------------");
         System.out.println(list2.toString());
+        System.out.println("-----------------------------------------");
+        System.out.println(list3.toString());
         System.out.println("-----------------------------------------");
         System.out.println(cacheMap.toString());
     }
