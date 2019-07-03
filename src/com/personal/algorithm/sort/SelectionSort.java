@@ -1,4 +1,4 @@
-package com.personal.algorithm;
+package com.personal.algorithm.sort;
 
 /**
  * @Author AlaneyS
