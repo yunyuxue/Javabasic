@@ -30,8 +30,8 @@ public class SortUtils {
         System.out.println();
     }
 
-    public static String[] generateStrArray(int arraySize, int strLength ) {
-        String[] comp = new String[arraySize];
+    public static String[] generateStrArray(int arrSize, int strLength ) {
+        String[] comp = new String[arrSize];
         StringBuffer sb = new StringBuffer();
         String refer = "abcdefghijklmnopqrsdtuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random random = new Random();
