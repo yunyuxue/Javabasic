@@ -3,7 +3,7 @@ package com.personal.algorithm.sort;
 /**
  * @Author AlaneyS
  * @Date 2019/7/3 16:06
- * @Description TODO
+ * @Description 快速排序：时间-O(NLogN)， 空间-O(1)，不稳定的排序
  * @Modified By
  * @Version: 1.0.0
  **/
