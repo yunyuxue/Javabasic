@@ -3,7 +3,7 @@ package com.personal.algorithm;
 /**
  * @Author AlaneyS
  * @Date 2019/7/3 10:06
- * @Description 插入排序： 时间--最差、平均-O(N^2), 最好-O(N), 空间-O(1)
+ * @Description 插入排序： 时间--最差、平均-O(N^2), 最好-O(N), 空间-O(1), 稳定的排序
  * @Modified By
  * @Version: 1.0.0
  **/
