@@ -30,13 +30,13 @@ public class SortUtils {
         System.out.println();
     }
 
-    public static String[] generateStrArray(int size, int large) {
-        String[] comp = new String[size];
+    public static String[] generateStrArray(int arraySize, int strLength ) {
+        String[] comp = new String[arraySize];
         StringBuffer sb = new StringBuffer();
         String refer = "abcdefghijklmnopqrsdtuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random random = new Random();
         for(int j = 0; j < comp.length; j++) {
-            for (int i = 0; i < large; i++) {
+            for (int i = 0; i < strLength; i++) {
                 int point = random.nextInt(refer.length());
                 sb.append(String.valueOf(refer.charAt(point)));
             }
