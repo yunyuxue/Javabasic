@@ -3,7 +3,7 @@ package com.personal.algorithm;
 /**
  * @Author AlaneyS
  * @Date 2019/7/2 21:05
- * @Description TODO
+ * @Description 选择排序：时间--最差、平均-O(N^2), 空间-O(1)
  * @Modified By
  * @Version: 1.0.0
  **/
