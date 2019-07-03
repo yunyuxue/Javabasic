@@ -23,8 +23,11 @@ public class SelectionSort {
     }
 
     public static void main(String[] args){
-        String[] strs = {"dwaf", "grh", "jhytj", "etre", "nfnv", "emhj", "kil", "ouy", "qwe", "zzf", "xcv", "cnh", "abm", "lkj", "poi", "erf", "hhrt", "tyu"};
+        String[] strs = SortUtils.generateStrArray(8, 5);
+        System.out.println("------before sort------");
+        SortUtils.show(strs);
         sort(strs);
+        System.out.println("------after ascend sort------");
         SortUtils.show(strs);
     }
 }
