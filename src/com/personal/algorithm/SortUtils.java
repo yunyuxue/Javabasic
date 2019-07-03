@@ -1,6 +1,7 @@
 package com.personal.algorithm;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * @Author AlaneyS
@@ -27,6 +28,22 @@ public class SortUtils {
             System.out.print(c[i] + " ");
         }
         System.out.println();
+    }
+
+    public static String[] generateStrArray(int size, int large) {
+        String[] comp = new String[size];
+        StringBuffer sb = new StringBuffer();
+        String refer = "abcdefghijklmnopqrsdtuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        Random random = new Random();
+        for(int j = 0; j < comp.length; j++) {
+            for (int i = 0; i < large; i++) {
+                int point = random.nextInt(refer.length());
+                sb.append(String.valueOf(refer.charAt(point)));
+            }
+            comp[j] = sb.toString();
+            sb.delete(0,sb.length());
+        }
+        return comp;
     }
 
 }
