@@ -42,7 +42,7 @@ public class HeapSort {
      * @Param [c, i, j]
      **/
     private static boolean less(Comparable[] c, int i, int j) {
-        return c[i - 1].compareTo(c[j - 1]) < 0;
+        return c[i-1].compareTo(c[j-1]) < 0;
     }
 
     /**
@@ -53,9 +53,9 @@ public class HeapSort {
      * @Param [c, i, j]
      **/
     private static void exch(Comparable[] c, int i, int j) {
-        Comparable temp = c[i - 1];
-        c[i - 1] = c[j - 1];
-        c[j - 1] = temp;
+        Comparable temp = c[i-1];
+        c[i-1] = c[j-1];
+        c[j-1] = temp;
     }
 
     public static void main(String[] args) {
