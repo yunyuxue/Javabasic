@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Author AlaneyS
  * @Date 2019/7/3 12:02
- * @Description 归并排序： 时间-O(NLogN)， 空间-O(N)，稳定的排序
+ * @Description 归并排序： 最差，平均，最坏时间-O(NLogN)， 空间-O(N)，稳定的排序
  * @Modified By
  * @Version: 1.0.0
  **/
