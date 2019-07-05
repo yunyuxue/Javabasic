@@ -11,7 +11,7 @@ public class ThreadDemo {
     public static void main(String[] args) {
         System.out.println("Thread-extended thread start: ");
         Thread t1 = new MyThread();
-        t1.start();
+        t1.start(); //多次调用会出现IllegalThreadStateException
         try{
             //主线程睡眠1s，等待t1线程结束。
             Thread.sleep(1000);
