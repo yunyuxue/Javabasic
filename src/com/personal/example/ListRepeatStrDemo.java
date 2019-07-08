@@ -42,6 +42,9 @@ public class ListRepeatStrDemo {
             }
         });
 
+        //Lambda实现
+        //Collections.sort(result, (List<String> o1, List<String> o2) -> {return o2.size()- o1.size();});
+
         System.out.println(result.toString());
     }
 
