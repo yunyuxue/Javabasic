@@ -41,8 +41,7 @@ public class Singleton {
 
     //内部静态持有类, 既实现了线程安全，又避免了同步带来的性能影响。
     private static class SingletonHolder{
-        public static final Singleton INSTANCE = new Singleton();
-    }
+        public static final Singleton INSTANCE = new Singleton();}
 
     public static final Singleton getInstance(){
         return SingletonHolder.INSTANCE;
